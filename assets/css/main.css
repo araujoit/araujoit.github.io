@@ -2,16 +2,50 @@
 /*@import url("font-awesome.min.css");*/
 
 :root {
-	--main-font-color: gray;
+	/*--main-font-color: rgb(0, 0, 0);*/
+	--main-font-color: rgb(63, 63, 63);
 	--main-link-color-focus: rgb(88, 88, 88);
 	--main-link-color-hover: #000;
 	--main-link-color-visited: rgb(88, 88, 88);
 	--main-footer-color: lightgray;
+	--separator-color: #000;
 }
 
 body {
     font-family: 'Open Sans';
-	margin: 0;
+	position: relative;
+    margin: 0;
+	padding: 0;
+    padding-top: 1rem;
+	color: var(--main-font-color);
+}
+
+.background {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url(../background/89781.jpg);
+	background-position: 50% 0;
+	background-size: cover;
+	background-repeat: no-repeat;
+	opacity: 0.3;
+	z-index: -1;
+}
+
+.content {
+	position: relative;
+	z-index: 1;
+}
+
+.separator {
+	background-color: var(--separator-color);
+	display: block;
+    height: 1px;
+    border: 0;
+    margin: 1em 0;
+    padding: 0;
 }
 
 section {
@@ -30,8 +64,8 @@ section .title {
 .identification {
 	display: flex;
 	flex-flow: row;
-	margin-top: 1rem;
 	flex-direction: row;
+	padding-bottom: inherit;
 }
 
 .identification .principal {
@@ -49,7 +83,7 @@ section .title {
 }
 
 .identification .principal .me .name {
-	font-size: larger;
+	font-size: xx-large;
 }
 
 .identification .principal .me .profession {
@@ -66,7 +100,6 @@ section .title {
 /**/
 .identification .contact ul {
 	display: grid;
-	gap: 1rem;
 	list-style-type: none;
 	align-items: center;
   	justify-content: center;
@@ -123,6 +156,7 @@ footer .contact ul {
 	list-style-type: none;
 	align-items: center;
   	justify-content: center;
+	grid-template-columns: repeat(5, 1fr) !important
 }
 
 footer .contact ul li i {
@@ -158,6 +192,44 @@ footer .copyright > span {
 	padding: 0 1rem 1rem 0;
 }
 
+.fa {
+	padding: 10px;
+	min-width: 25px;
+	font-size: 30px;
+	text-align: center;
+	text-decoration: none;
+	margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-linkedin {
+	background: #007bb5;
+  	color: white;
+}
+
+.fa-facebook {
+	background: #3B5998;
+	color: white;
+}
+
+.fa-github {
+	background: #000000;
+	color: white;
+}
+
+.fa-bitbucket {
+	background: #0C61DB;
+	color: white;
+}
+
+.fa-envelope {
+	background: #d5b59c;
+	color: black;
+}
+
 /** Mobile devices **/
 @media (max-width: 480px) {
 	body {
@@ -180,15 +252,20 @@ footer .copyright > span {
 	}
 
 	.identification .contact ul {
-		grid-template-columns: repeat(2, 1fr) !important;
+		grid-template-columns: repeat(5, 1fr) !important;
 	}
 
-	footer .contact ul {
-		grid-template-columns: repeat(2, 1fr) !important
+	footer .contact ul li > img .icon {
+		width: 2rem;
 	}
 
-	footer .contact ul li i > a span {
+	footer .contact ul li > a span {
 		margin-left: 0.5rem;
+	}
+
+	.fa {
+		padding: 10px;
+		width: 25px;
 	}
 }
 
@@ -196,10 +273,6 @@ footer .copyright > span {
 @media (min-width: 481px) and  (max-width: 768px) {
 	body {
 		font-size: 1.1rem !important;
-	}
-
-	footer .contact ul {
-		grid-template-columns: repeat(2, 1fr) !important
 	}
 	
 	footer .contact ul li i > a span {
@@ -211,10 +284,6 @@ footer .copyright > span {
 @media (min-width: 769px) and  (max-width: 1024px) {
 	body {
 		font-size: 1.2rem !important;
-	}
-
-	footer .contact ul {
-		grid-template-columns: repeat(3, 1fr) !important
 	}
 
 	footer .contact ul li i > a span {
@@ -229,15 +298,11 @@ footer .copyright > span {
 	}
 
 	.identification .principal .me .name {
-		font-size: x-large;
+		font-size: xx-large;
 	}
 
 	.identification .principal .me .profession {
 		font-size: large;
-	}
-
-	footer .contact ul {
-		grid-template-columns: repeat(5, 1fr)!important;
 	}
 
 	footer .contact ul li i > a span {
@@ -251,16 +316,16 @@ footer .copyright > span {
 		font-size: 1.5rem !important;
 	}
 
+	.fa {
+		min-width: 50px;
+	}
+
 	.identification .principal .me .name {
 		font-size: xx-large;
 	}
 
 	.identification .principal .me .profession {
 		font-size: x-large;
-	}
-
-	footer .contact ul {
-		grid-template-columns: repeat(5, 1fr)!important;
 	}
 }
 
@@ -270,15 +335,15 @@ footer .copyright > span {
 		font-size: 2rem !important;
 	}
 
+	.fa {
+		min-width: 50px;
+	}
+
 	.identification .principal .me .name {
 		font-size: xxx-large;
 	}
 
 	.identification .principal .me .profession {
 		font-size: xx-large;
-	}
-
-	footer .contact ul {
-		grid-template-columns: repeat(5, 1fr)!important;
 	}
 }
