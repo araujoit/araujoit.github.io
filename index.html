@@ -14,8 +14,22 @@
 <link rel="manifest" href="INDEX.manifest">
 <link rel="icon" href="assets/css/images/fluidicon.png" />
 <link rel="stylesheet" href="assets/css/main.css" />
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
-	
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+<script type="importmap">
+    {
+      "imports": {
+        "@material/web/": "https://esm.run/@material/web/"
+      }
+    }
+</script>
+<script type="module">
+    import '@material/web/all.js';
+    import {styles as typescaleStyles} from '@material/web/typography/md-typescale-styles.js';
+
+	document.adoptedStyleSheets.push(typescaleStyles.styleSheet);
+</script>
+
 <section class="identification">
 	<div class="principal">
 		<img src="assets/css/images/me.jpg"/>

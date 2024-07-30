@@ -31,6 +31,7 @@ section .title {
 	display: flex;
 	flex-flow: row;
 	margin-top: 1rem;
+	flex-direction: row;
 }
 
 .identification .principal {
@@ -48,17 +49,18 @@ section .title {
 }
 
 .identification .principal .me .name {
-	font-size: xxx-large;
+	font-size: larger;
 }
 
 .identification .principal .me .profession {
-	font-size: x-large;
+	font-size: large;
 }
 
 .identification .contact {
 	/*border: 1px dashed green;*/
 	padding-left: 1em;
 	margin-left: 2rem;
+	margin-right: 1rem;
 }
 
 /**/
@@ -162,6 +164,25 @@ footer .copyright > span {
 		font-size: 1rem !important;
 	}
 
+	.identification {
+		flex-direction: column;
+	}
+
+	.identification .principal img {
+		max-height: 8rem;
+		border-radius: 3rem;
+	}
+
+	.identification .contact {
+		padding-left: 0;
+		margin-left: 0;
+		margin-right: 1rem;
+	}
+
+	.identification .contact ul {
+		grid-template-columns: repeat(2, 1fr) !important;
+	}
+
 	footer .contact ul {
 		grid-template-columns: repeat(2, 1fr) !important
 	}
@@ -174,7 +195,7 @@ footer .copyright > span {
 /** iPads, Tablets **/
 @media (min-width: 481px) and  (max-width: 768px) {
 	body {
-		font-size: 1.2rem !important;
+		font-size: 1.1rem !important;
 	}
 
 	footer .contact ul {
@@ -189,7 +210,7 @@ footer .copyright > span {
 /** Small screens **/
 @media (min-width: 769px) and  (max-width: 1024px) {
 	body {
-		font-size: 1.5rem !important;
+		font-size: 1.2rem !important;
 	}
 
 	footer .contact ul {
@@ -204,7 +225,15 @@ footer .copyright > span {
 /** Desktops, large screens **/
 @media (min-width: 1025px) and  (max-width: 1200px) {
 	body {
-		font-size: 1.5rem !important;
+		font-size: 1.3rem !important;
+	}
+
+	.identification .principal .me .name {
+		font-size: x-large;
+	}
+
+	.identification .principal .me .profession {
+		font-size: large;
 	}
 
 	footer .contact ul {
@@ -217,9 +246,36 @@ footer .copyright > span {
 }
 
 /** Extra large screens, TV **/
-@media (min-width: 1201px) {
+@media (min-width: 1201px) and  (max-width: 1600px) {
+	body {
+		font-size: 1.5rem !important;
+	}
+
+	.identification .principal .me .name {
+		font-size: xx-large;
+	}
+
+	.identification .principal .me .profession {
+		font-size: x-large;
+	}
+
+	footer .contact ul {
+		grid-template-columns: repeat(5, 1fr)!important;
+	}
+}
+
+/** Extra large screens, TV **/
+@media (min-width: 1601px) {
 	body {
 		font-size: 2rem !important;
+	}
+
+	.identification .principal .me .name {
+		font-size: xxx-large;
+	}
+
+	.identification .principal .me .profession {
+		font-size: xx-large;
 	}
 
 	footer .contact ul {
