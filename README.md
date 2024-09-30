@@ -1,3 +1,4 @@
+<img style="max-width: 20em;margin: 0 auto;" src="./assets/css/images/me.jpg"></img>
 <h1 align="center">Hi 👋, I'm Leandro Araújo</h1>
 <h3 align="center">A passionate fullstack engineer from Brazil</h3>
 
