@@ -1,7 +1,8 @@
-<img style="max-width: 20em;margin: 0 auto;" src="./assets/css/images/me.jpg"></img>
-<h1 align="center">Hi 👋, I'm Leandro Araújo</h1>
-<h3 align="center">A passionate fullstack engineer from Brazil</h3>
-
+<p align="center">
+    <img style="max-width: 20em;" src="./assets/css/images/me.jpg">
+    <h1>Hi 👋, I'm Leandro Araújo</h1>
+    <h3>A passionate fullstack engineer from Brazil</h3>
+</p>
 
 <p><img align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=araujoit&show_icons=true&locale=en&layout=compact" alt="araujoit" /></p>
 
