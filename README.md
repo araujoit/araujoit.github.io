@@ -1,7 +1,7 @@
 <p align="center">
     <img style="max-width: 20em;" src="./assets/css/images/me.jpg">
     <h1>Hi 👋, I'm Leandro Araújo</h1>
-    <h3>A passionate fullstack engineer from Brazil</h3>
+    <h3>A passionate fullstack engineer and software architect from Brazil</h3>
 </p>
 
 <p><img align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=araujoit&show_icons=true&locale=en&layout=compact" alt="araujoit" /></p>
