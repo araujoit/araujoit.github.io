@@ -9,6 +9,8 @@
 
 - 📄 Know about my experiences [https://www.linkedin.com/in/leandroaraujo-sp/](https://www.linkedin.com/in/leandroaraujo-sp/)
 
+- 📄 My professional profile [https://araujoit.github.io/professional-profile/](https://araujoit.github.io/professional-profile/)
+
 <h3 align="left">Connect with me:</h3>
 <p align="left">
 <a href="https://linkedin.com/in/leandroaraujo-sp" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="leandroaraujo-sp" height="30" width="40" /></a>
